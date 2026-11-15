@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>FaithConnect</title>
+    <link rel="stylesheet" href="activos/css/styles.css">
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+
+    <aside class="menu">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="#">
+                        <img src="activos/img/logo.png" alt="Logo">
+                        <span>FaithConnect</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#inicio">
+                        <img src="activos/img/inicio.png" alt="Inicio">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#publicaciones">
+                        <img src="activos/img/publicaciones.png" alt="Publicaciones">
+                        <span>Publicaciones</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="páginas/crear.html">
+                        <img src="activos/img/crear.png" alt="Crear">
+                        <span>Crear publicación</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="páginas/perfil.html">
+                        <img src="activos/img/perfil.png" alt="Perfil">
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="menu-abajo">
+                <a href="páginas/acerca.html">
+                    <img src="activos/img/acerca-de.png" alt="Acerca de">
+                    <span>Acerca de FaithConnect</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <div class="contenido">
+
+        <!-- HISTORIAS -->
+
+        <section class="historias">
+            <ul>
+
+                <li>
+                    <a href="#avatar1">
+                        <div class="circulo">
+                            <img src="activos/img/avatar1.png" alt="Pablo">
+                        </div>
+                        <span>Pablo_Lerman</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar2">
+                        <div class="circulo">
+                            <img src="activos/img/avatar2.png" alt="Juan">
+                        </div>
+                        <span>Juandavida1go</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar3">
+                        <div class="circulo">
+                            <img src="activos/img/avatar3.png" alt="Abraham">
+                        </div>
+                        <span>Abrahamestra1</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar4">
+                        <div class="circulo">
+                            <img src="activos/img/avatar4.png" alt="Itiel">
+                        </div>
+                        <span>itielarroyoespa</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar5">
+                        <div class="circulo">
+                            <img src="activos/img/avatar5.png" alt="Bryan">
+                        </div>
+                        <span>bryan_caro316</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar6">
+                        <div class="circulo">
+                            <img src="activos/img/avatar6.png" alt="Victor">
+                        </div>
+                        <span>victor sanchez7</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#avatar7">
+                        <div class="circulo">
+                            <img src="activos/img/avatar7.png" alt="Lisney">
+                        </div>
+                        <span>LisneydeFont1</span>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <!-- INICIO -->
+
+        <main id="inicio">
+            <p class="subtitulo">
+                <strong>UN LUGAR PARA CRECER JUNTOS</strong>
+            </p>
+
+            <h1>Tu fe también conecta. ♡</h1>
+
+            <p class="descripcion">
+                Comparte lo que Dios está haciendo en tu vida.
+            </p>
+        </main>
+
+
+        <!-- VERSICULO -->
+
+        <section class="versiculo">
+            <p>✦ VERSÍCULO DEL DÍA</p>
+
+            <h2>
+                "Porque de tal manera amó Dios al mundo,
+                que ha dado a su Hijo unigénito, para que
+                todo aquel que en él cree, no se pierda,
+                mas tenga vida eterna."
+            </h2>
+
+            <p class="cita">Juan 3:16 «RVR1960»</p>
+
+            <button class="reflexionar">Reflexionar</button>
+        </section>
+
+
+        <!-- CREAR PUBLICACION -->
+
+        <section class="comunidad" id="crear">
+
+            <h3>Comparte con la comunidad</h3>
+
+            <form>
+
+                <div class="campos">
+
+                    <div class="categoria">
+                        <label for="categoria">Categoría</label>
+
+                        <select name="categoria" id="categoria" required>
+                            <option value="devocional">Devocional</option>
+                            <option value="opinion">Opinión</option>
+                            <option value="duda">Duda</option>
+                            <option value="inspirador">Mensaje inspirador</option>
+                        </select>
+                    </div>
+
+                    <div class="mensaje">
+                        <label for="mensaje">Tu publicación</label>
+
+                        <textarea
+                            id="mensaje"
+                            name="publicacion"
+                            placeholder="¿Qué quieres compartir con la comunidad?"
+                            required
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <div class="publicar">
+                    <p>Comparte con respeto y amor 🤍</p>
+                    <button type="submit">Publicar</button>
+                </div>
+
+            </form>
+        </section>
+
+
+        <!-- PUBLICACIONES -->
+
+        <section id="publicaciones" class="publicaciones">
+
+            <!-- PUBLICACION 1 -->
+
+            <div class="fila-post">
+
+                <article class="post">
+
+                    <div class="usuario">
+                        <img
+                            src="activos/img/Hechos-norte.png"
+                            class="foto-usuario"
+                            alt="Hechos Norte"
+                        >
+
+                        <h4>
+                            IglesiaHechosNorte
+                            <img
+                                src="activos/img/Verificación.png"
+                                class="verificado"
+                                alt="Verificado"
+                            >
+                        </h4>
+                    </div>
+
+                    <video class="video" controls>
+                        <source
+                            src="activos/videos/Short1.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <div class="acciones">
+                        <img src="activos/img/Corazón.png" alt="Me gusta">
+                        <p><strong>0</strong></p>
+                        <img src="activos/img/comentarios.png" alt="Comentarios">
+                    </div>
+
+                </article>
+
+
+                <!-- INFORMACION DERECHA -->
+
+                <div class="info">
+
+                    <div class="info-ia">
+                        <div class="cruz">✝</div>
+
+                        <h3>DATO IA</h3>
+
+                        <p>
+                            La enseñanza de este bibleshort usa
+                            como base Salmo 23:4
+                            <strong>«RVR1960»</strong>
+                        </p>
+
+                        <p>
+                            Lo que nos quiere decir es que no
+                            debemos de temer mal alguno si Dios
+                            está con nosotros y que no hay
+                            seguridad en las cosas materiales.
+                        </p>
+                    </div>
+
+                    <div class="info-logo">
+                        <img
+                            src="activos/img/Hechos-norte-row.png"
+                            alt="HECHOS NORTE"
+                        >
+                    </div>
+
+                    <div class="info-cuenta">
+
+                        <div class="estrella">
+                            <strong>✦</strong>
+                            <span>ACCOUNT</span>
+                        </div>
+
+                        <h3>Hechos Norte</h3>
+
+                        <p>
+                            Somos una iglesia vibrante y apasionada
+                            de creyentes comprometidos a vivir y
+                            compartir el mensaje transformador de
+                            <strong>Jesús</strong> en un mundo actual.
+                            Aprendiendo a cargar nuestra cruz.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PUBLICACION 2 -->
+
+            <div class="fila-post">
+
+                <article class="post post-texto">
+
+                    <div class="usuario">
+                        <img
+                            src="activos/img/avatar1.jpg"
+                            class="foto-usuario"
+                            alt="Pablo"
+                        >
+
+                        <h4>Pablo_Lerman</h4>
+                    </div>
+
+                    <span class="etiqueta">
+                        Devocional: ¿Lo hice yo solo?
+                    </span>
+
+                    <div class="texto">
+                        <p>
+                            "¿Pero quién soy yo, y quién es mi pueblo,
+                            para que podamos darte algo a ti?
+                            ¡Todo lo que tenemos ha venido de ti,
+                            y te damos solo lo que tú primero nos diste!"
+                        </p>
+
+                        <p>
+                            <strong>1 Crónicas 29:14 «NTV»</strong>
+                        </p>
+                    </div>
+
+                    <span class="etiqueta">Reflexión:</span>
+
+                    <div class="texto">
+                        <p>
+                            Cuando entendemos que nuestros talentos,
+                            nuestro tiempo y nuestros recursos son
+                            un préstamo lleno de amor de parte de Dios,
+                            dejamos de lado el orgullo.
+                        </p>
+
+                        <p>
+                            Ya no sentimos que "merecemos" todo lo bueno,
+                            sino que lo recibimos como un regalo.
+                            Eso hace que dar a los demás o servir
+                            no sea una carga, sino un privilegio.
+                        </p>
+                    </div>
+
+                    <span class="etiqueta">Pregunta</span>
+
+                    <div class="texto">
+                        <p>
+                            ¿Qué puedes agradecer hoy que
+                            normalmente das por sentado?
+                        </p>
+                    </div>
+
+                    <div class="acciones">
+                        <img src="activos/img/Corazón.png" alt="Me gusta">
+                        <p><strong>0</strong></p>
+                        <img src="activos/img/comentarios.png" alt="Comentarios">
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- PUBLICACION 3 -->
+
+            <div class="fila-post">
+
+                <article class="post">
+
+                    <div class="usuario">
+                        <img
+                            src="activos/img/avatar4.jpg"
+                            class="foto-usuario"
+                            alt="Itiel"
+                        >
+
+                        <h4>itielarroyoespa</h4>
+                    </div>
+
+                    <img
+                        src="activos/img/versiculo.jpeg"
+                        class="imagen-post"
+                        alt="Imagen con versículo"
+                    >
+
+                    <p class="comentario">
+                        Alabado sea el nombre del Señor 🤍.
+                    </p>
+
+                    <div class="acciones">
+                        <img src="activos/img/Corazón.png" alt="Me gusta">
+                        <p><strong>0</strong></p>
+                        <img src="activos/img/comentarios.png" alt="Comentarios">
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="activos/img/logo.png" alt="FaithConnect">
+                    <h3>FaithConnect</h3>
+                </div>
+
+                <p>
+                    Un espacio para compartir nuestra fe,
+                    crecer juntos y conectar a través
+                    del amor de Dios.
+                </p>
+            </div>
+
+            <div class="footer-enlaces">
+                <h4>Explorar</h4>
+
+                <a href="index.html">Inicio</a>
+                <a href="index.html#publicaciones">Publicaciones</a>
+                <a href="páginas/crear.html">Crear publicación</a>
+                <a href="páginas/perfil.html">Mi perfil</a>
+                <a href="páginas/acerca.html">Acerca de nosotros</a>
+
+            </div>
+
+            <div class="footer-comunidad">
+                <h4>Nuestra comunidad</h4>
+
+                <p>
+                    Compartimos con respeto, amor
+                    y propósito.
+                </p>
+
+                <span>✦ Tu fe también conecta.</span>
+            </div>
+
+        </div>
+
+        <div class="footer-abajo">
+            <p>© 2026 FaithConnect. Todos los derechos reservados por Zamora.</p>
+            <p>Hecho con fe y amor 🤍</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
