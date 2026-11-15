@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    min-height: 100vh;
+
+    background-color: #fffef8;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+
+/* MENU LATERAL */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100vh;
+    background-color: #DFE8D9;
+    padding: 24px 16px;
+    overflow: hidden;
+    transition: width 0.3s;
+    z-index: 10;
+}
+
+.menu:hover {
+    width: 257px;
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+.menu a:hover,
+.menu .activo:hover {
+    background-color: #ccd9c7;
+}
+
+.menu .activo {
+    background-color: #d2dfcd;
+}
+
+.menu img {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.menu .logo img {
+    width: 44px;
+    height: 44px;
+}
+
+.menu span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu:hover span {
+    opacity: 1;
+}
+
+.menu-abajo {
+    font-size: 14px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    min-width: 0;
+}
+
+/* ViDEO */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.reproductor {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.reproductor video {
+    display: block;
+
+    width: 100%;
+    max-width: 980px;
+    aspect-ratio: 16 / 9;
+
+    background-color: #000000;
+
+    object-fit: contain;
+}
+
+
+/* ZONA INFERIOR */
+
+.zona-inferior {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+
+    width: 100%;
+}
+
+
+/* INFORMACION DEL VIDEO */
+
+.informacion-video {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.informacion-video h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+
+/* CANAL */
+
+.fila-canal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.canal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.canal img {
+    width: 36px;
+    height: 36px;
+
+    background-color: #fff;
+
+    object-fit: cover;
+}
+
+.canal strong {
+    font-size: 14px;
+}
+
+.seguir {
+    margin-left: 8px;
+    padding: 11px 21px;
+
+    background-color: #355C4A;
+    color: #fff;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+}
+
+.seguir:hover {
+    background-color: #26352C;
+}
+
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones button {
+    padding: 11px 17px;
+
+    background-color: #355C4A;
+    color: #ffffff;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.botones button:hover {
+    background-color: #26352C;
+}
+
+
+/* DESCRIPCION */
+
+.descripcion {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.65;
+
+    color: black;
+}
+
+
+/* ESCRITURA RELACIONADA */
+
+.escritura {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+.escritura > span {
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    color: #868686;
+}
+
+.escritura h3 {
+    font-size: 18px;
+}
+
+.versiculo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 20px;
+
+    background-color: #355C4A;
+
+    border: 1px solid #19241d;
+    border-radius: 12px;
+}
+
+.versiculo h4 {
+    font-size: 15px;
+    color: #e0e0e0
+}
+
+.versiculo p {
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #e0e0e0;
+}
+
+.versiculo small {
+    font-size: 11px;
+    color: #aaaaaa;
+}
+
