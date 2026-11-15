@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Crear publicación | FaithConnect</title>
+    <link rel="stylesheet" href="../activos/css/crear.css">
+    <script src="../activos/js/crear.js"></script>
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+
+    <aside class="menu">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="../index.html">
+                        <img src="../activos/img/logo.png" alt="Logo">
+                        <span>FaithConnect</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#inicio">
+                        <img src="../activos/img/inicio.png" alt="Inicio">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html#publicaciones">
+                        <img src="../activos/img/publicaciones.png" alt="Publicaciones">
+                        <span>Publicaciones</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../páginas/crear.html" class="activo">
+                        <img src="../activos/img/crear.png" alt="Crear">
+                        <span>Crear publicación</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../páginas/perfil.html">
+                        <img src="../activos/img/perfil.png" alt="Perfil">
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="menu-abajo">
+                <a href="../páginas/acerca.html">
+                    <img src="../activos/img/acerca-de.png" alt="Acerca de">
+                    <span>Acerca de FaithConnect</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+
+    <!-- CONTENIDO -->
+
+    <div class="contenido">
+
+        <!-- ENCABEZADO -->
+
+        <header class="encabezado">
+            <p class="subtitulo">UN ESPACIO PARA COMPARTIR</p>
+
+            <h1>Comparte lo que hay en tu corazón. ♡</h1>
+
+            <p class="descripcion">
+                Tu experiencia puede inspirar, fortalecer o
+                acompañar a alguien más en su camino de fe.
+            </p>
+        </header>
+
+
+        <!-- FRASE -->
+
+        <section class="frase">
+            <span>✦ COMUNIDAD FAITHCONNECT</span>
+
+            <p>
+                Cada historia tiene un propósito.
+                Gracias por compartir la tuya.
+            </p>
+        </section>
+
+
+        <!-- EDITOR Y VISTA PREVIA -->
+
+        <div class="zona">
+
+            <!-- FORMULARIO -->
+
+            <section class="editor">
+
+                <div class="titulo">
+                    <div>
+                        <p class="subtitulo">NUEVA PUBLICACIÓN</p>
+                        <h2>Crear publicación</h2>
+                    </div>
+
+                    <span class="paso">01 / 02</span>
+                </div>
+
+                <form id="formulario">
+
+                    <!-- USUARIO -->
+
+                    <div class="usuario">
+                        <div class="foto-usuario">S</div>
+
+                        <div>
+                            <h4>Santiago Hijo de Zabedeo</h4>
+                            <p>Compartiendo con respeto y amor</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CATEGORIA -->
+
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+
+                        <select id="categoria" required>
+                            <option value="Devocional">Devocional</option>
+                            <option value="Opinión">Opinión</option>
+                            <option value="Duda">Duda</option>
+                            <option value="Mensaje inspirador">Mensaje inspirador</option>
+                        </select>
+                    </div>
+
+
+                    <!-- TITULO -->
+
+                    <div class="campo">
+                        <label for="titulo">Título de tu publicación</label>
+
+                        <input
+                            type="text"
+                            id="titulo"
+                            placeholder="Escribe un título que inspire..."
+                            maxlength="80"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- MENSAJE -->
+
+                    <div class="campo">
+                        <div class="fila-label">
+                            <label for="mensaje">Tu mensaje</label>
+                            <span id="contador">0 / 1500</span>
+                        </div>
+
+                        <textarea
+                            id="mensaje"
+                            placeholder="¿Qué ha puesto Dios en tu corazón hoy?"
+                            maxlength="1500"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <!-- REFERENCIA BIBLICA -->
+
+                    <div class="campo">
+                        <label for="referencia">
+                            Referencia bíblica (opcional)
+                        </label>
+
+                        <input
+                            type="text"
+                            id="referencia"
+                            placeholder="Ejemplo: Salmos 23:1"
+                        >
+                    </div>
+
+
+                    <!-- BOTONES -->
+
+                    <div class="botones">
+                        <button type="button" id="limpiar">
+                            Limpiar
+                        </button>
+
+                        <button type="submit" id="publicar">
+                            Publicar
+                        </button>
+                    </div>
+
+                    <p id="aviso"></p>
+
+                </form>
+            </section>
+
+
+            <!-- VISTA PREVIA -->
+
+            <section class="vista">
+
+                <div class="titulo">
+                    <div>
+                        <p class="subtitulo">ASÍ SE VERÁ</p>
+                        <h2>Vista previa</h2>
+                    </div>
+
+                    <span class="paso">02 / 02</span>
+                </div>
+
+                <p class="ayuda">
+                    Observa cómo se verá tu publicación
+                    mientras la escribes.
+                </p>
+
+
+                <!-- TARJETA -->
+
+                <article class="post">
+
+                    <div class="usuario">
+                        <div class="foto-usuario">S</div>
+
+                        <div>
+                            <h4>Santiago Hijo de Zabedeo</h4>
+                            <p>FaithConnect</p>
+                        </div>
+                    </div>
+
+                    <span class="etiqueta" id="ver-categoria">
+                        Devocional
+                    </span>
+
+                    <h3 id="ver-titulo">
+                        El título de tu publicación
+                    </h3>
+
+                    <p id="ver-mensaje">
+                        Mensaje a compartir
+                    </p>
+
+                    <p id="ver-referencia"></p>
+
+                    <img
+                        id="ver-imagen"
+                        alt="Imagen de la publicación"
+                        hidden
+                    >
+
+                    <div class="acciones">
+                        <img src="../activos/img/Corazón.png" alt="Me gusta">
+                        <img src="../activos/img/comentarios.png" alt="Comentarios">
+                    </div>
+
+                </article>
+
+
+                <!-- RECORDATORIO -->
+
+                <div class="recordatorio">
+                    <span>✦ ANTES DE PUBLICAR</span>
+
+                    <p>
+                        Que tus palabras sean de ánimo,
+                        respeto y amor para quienes las lean.
+                    </p>
+
+                    <strong>Efesios 4:29</strong>
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>        
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="../activos/img/logo.png" alt="FaithConnect">
+                    <h3>FaithConnect</h3>
+                </div>
+
+                <p>
+                    Un espacio para compartir nuestra fe,
+                    crecer juntos y conectar a través
+                    del amor de Dios.
+                </p>
+            </div>
+
+            <div class="footer-enlaces">
+                <h4>Explorar</h4>
+
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#publicaciones">Publicaciones</a>
+                <a href="../páginas/crear.html">Crear publicación</a>
+                <a href="../páginas/perfil.html">Mi perfil</a>
+                <a href="../páginas/acerca.html">Acerca de nosotros</a>
+                
+            </div>
+
+            <div class="footer-comunidad">
+                <h4>Nuestra comunidad</h4>
+
+                <p>
+                    Compartimos con respeto, amor
+                    y propósito.
+                </p>
+
+                <span>✦ Tu fe también conecta.</span>
+            </div>
+
+        </div>
+
+        <div class="footer-abajo">
+            <p>© 2026 FaithConnect. Todos los derechos reservados por Zamora.</p>
+            <p>Hecho con fe y amor 🤍</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
