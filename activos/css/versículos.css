@@ -165,12 +165,11 @@ button {
 
 .zona-inferior {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
     gap: 22px;
 
     width: 100%;
+    min-width: 0;
 }
 
 
@@ -337,4 +336,116 @@ button {
 .versiculo small {
     font-size: 11px;
     color: #aaaaaa;
+}
+
+
+/* TEMAS DERECHA */
+
+.temas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    flex: 0 1 395px;
+    min-width: 280px;
+
+    padding: 16px 14px;
+
+    background: linear-gradient(
+        120deg,
+        #26352C,
+        #355C4A,
+        #64846E
+    );
+    color: #F5F2EA;
+
+    border-radius: 16px;
+}
+
+.temas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temas-header h2 {
+    font-size: 18px;
+}
+
+.temas-header span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* LISTA DE TEMAS */
+
+.lista-temas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.tema {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 4px;
+
+    border-radius: 9px;
+
+    transition: background-color 0.2s;
+}
+
+.tema:hover {
+    background-color: #383535;
+}
+
+.tema img,
+.miniatura-alternativa {
+    width: 103px;
+    min-width: 103px;
+    height: 57px;
+
+    border-radius: 9px;
+
+    object-fit: cover;
+}
+
+.tema p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.miniatura-alternativa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #467d70;
+    color: #ffffff;
+
+    font-size: 26px;
+}
+
+.zona-inferior {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+
+/* BARRA DE DESPLAZAMIENTO */
+
+.lista-temas::-webkit-scrollbar {
+    width: 7px;
+}
+
+.lista-temas::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 10px;
 }
