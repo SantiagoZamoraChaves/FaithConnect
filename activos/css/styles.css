@@ -231,6 +231,15 @@ main h1 {
     font-size: 18px;
 }
 
+.reflexionar:hover {
+    background-color: #26352C;
+}
+
+.reflexionar a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* CREAR PUBLICACION */
 
