@@ -351,13 +351,8 @@ button {
 
     padding: 16px 14px;
 
-    background: linear-gradient(
-        120deg,
-        #26352C,
-        #355C4A,
-        #64846E
-    );
-    color: #F5F2EA;
+    background: #F5F2EA;
+    color: black;
 
     border-radius: 16px;
 }
@@ -402,7 +397,7 @@ button {
 }
 
 .tema:hover {
-    background-color: #383535;
+    background-color: #cfccc2;
 }
 
 .tema img,
