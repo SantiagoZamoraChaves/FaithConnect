@@ -239,34 +239,6 @@ button {
 }
 
 
-/* BOTONES */
-
-.botones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.botones button {
-    padding: 11px 17px;
-
-    background-color: #355C4A;
-    color: #ffffff;
-
-    border-radius: 25px;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    white-space: nowrap;
-}
-
-.botones button:hover {
-    background-color: #26352C;
-}
-
-
 /* DESCRIPCION */
 
 .descripcion {
