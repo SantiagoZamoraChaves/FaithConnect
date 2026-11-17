@@ -107,7 +107,7 @@ button {
 
 .historias {
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .historias ul {
@@ -136,7 +136,13 @@ button {
     gap: 10px;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease-in-out;
 }
+
+.historias a:hover {
+    transform: scale(1.1);
+}
+
 
 .circulo {
     display: flex;
@@ -330,6 +336,11 @@ main h1 {
     background-color: #355C44;
     color: white;
     font-size: 17px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.publicar button:hover {
+   background-color: #26352C;
 }
 
 
