@@ -359,7 +359,7 @@ main h1 {
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
-    width: 100%;
+    width: 90%;
 }
 
 .post {
@@ -373,6 +373,35 @@ main h1 {
     border: 2px solid #eeeeee;
     border-radius: 12px;
     background-color: #fffef8;
+}
+
+
+/* FILTRO DE PUBLICACIONES */
+
+.filtro-publicaciones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+    color: #355C4A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filtro-publicaciones select {
+    padding: 7px 12px;
+    border: 1px solid #DFE8D9;
+    border-radius: 10px;
+    background-color: #355C4A;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.filtro-publicaciones select:hover {
+    background-color: #26352C;
 }
 
 
@@ -567,6 +596,98 @@ main h1 {
 .comentario {
     font-size: 15px;
     margin: 0;
+}
+
+
+/* ORGANIZAR CONTADOR Y BUSCADOR */
+
+.herramientas-publicaciones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: solid #eeeeee 1px;
+    border-radius: 5px;
+    background-color: #F5F2EA;
+    padding: 10px;
+}
+
+.herramientas-publicaciones h4 {
+    color: #26352C;
+}
+
+.herramientas-publicaciones p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #355C44;
+}
+
+.herramientas-publicaciones  input {
+    width: 100%;
+    max-width: 520px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid #ddd 1px;
+}
+
+
+/* FOTO DE PERFIL EN PUBLICACIONES NUEVAS */
+
+#nuevas-publicaciones .usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#nuevas-publicaciones .foto-perfil {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#nuevas-publicaciones .acciones strong {
+    padding-left: -17px;
+}
+
+/* BOTÓN ELIMINAR PUBLICACIÓN */
+
+#nuevas-publicaciones .boton-eliminar {
+    margin-left: auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #DFE8D9;
+    color: #355C4A;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#nuevas-publicaciones .boton-eliminar:hover {
+    background-color: #355C4A;
+    color: white;
+}
+
+
+/* BOTÓN ELIMINAR EN PUBLICACIONES ORIGINALES */
+
+.publicaciones .boton-eliminar {
+    margin-left: auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #DFE8D9;
+    color: #355C4A;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.publicaciones .boton-eliminar:hover {
+    background-color: #355C4A;
+    color: white;
 }
 
 /* FOOTER */
@@ -842,6 +963,15 @@ main h1 {
     .usuario h4 {
         font-size: 12px;
         overflow-wrap: anywhere;
+    }
+
+    .filtro-publicaciones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtro-publicaciones select {
+        width: 100%;
     }
 
     .footer {

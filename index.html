@@ -182,7 +182,7 @@
 
             <h3>Comparte con la comunidad</h3>
 
-            <form>
+            <form id="form-publicacion">
 
                 <div class="campos">
 
@@ -190,10 +190,11 @@
                         <label for="categoria">Categoría</label>
 
                         <select name="categoria" id="categoria" required>
-                            <option value="devocional">Devocional</option>
-                            <option value="opinion">Opinión</option>
-                            <option value="duda">Duda</option>
-                            <option value="inspirador">Mensaje inspirador</option>
+                            <option value="Devocional">Devocional</option>
+                            <option value="Versiculo">Versículo</option>
+                            <option value="Opinion">Opinión</option>
+                            <option value="Duda">Duda</option>
+                            <option value="Mensaje inspirador">Mensaje inspirador</option>
                         </select>
                     </div>
 
@@ -223,11 +224,48 @@
 
         <section id="publicaciones" class="publicaciones">
 
+            <div class="herramientas-publicaciones">
+
+
+                <!--CONTADOR DE PUBLICACIONES: Funcionalidad adicional-->
+
+                <h4>Publicaciones:</h4>
+                <p id="contador-publicaciones"></p>
+
+
+                <!--BUSCADOR DE PUBLICACIONES: Funcionalidad adicional-->
+
+                <input
+                    type="search"
+                    id="buscar-publicaciones"
+                    placeholder="Buscar publicaciones..."
+                >
+
+            </div>
+
+
+            <!--FILTRO DE PUBLICACIONES-->
+
+            <div class="filtro-publicaciones">
+
+                <label for="filtro-categoria">Filtrar por categoría:</label>
+
+                <select id="filtro-categoria">
+                    <option value="todas">Todas</option>
+                    <option value="devocional">Devocional</option>
+                    <option value="versiculo">Versículo</option>
+                    <option value="opinion">Opinión</option>
+                    <option value="duda">Duda</option>
+                    <option value="inspirador">Mensaje inspirador</option>
+                </select>
+
+            </div>
+
             <!-- PUBLICACION 1 -->
 
             <div class="fila-post">
 
-                <article class="post">
+                <article class="post" data-categoria="inspirador">
 
                     <div class="usuario">
                         <img
@@ -326,7 +364,7 @@
 
             <div class="fila-post">
 
-                <article class="post post-texto">
+                <article class="post post-texto" data-categoria="devocional">
 
                     <div class="usuario">
                         <img
@@ -397,7 +435,7 @@
 
             <div class="fila-post">
 
-                <article class="post">
+                <article class="post" data-categoria="versiculo">
 
                     <div class="usuario">
                         <img
@@ -432,6 +470,8 @@
                 </article>
 
             </div>
+
+            <div id="nuevas-publicaciones"></div>
 
         </section>
 
@@ -486,6 +526,8 @@
         </div>
 
     </footer>
+
+<script src="activos/js/publicaciones.js"></script>
 
 </body>
 </html>
