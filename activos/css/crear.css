@@ -674,3 +674,157 @@ button {
     font-size: 12px;
     color: #526b59;
 }
+
+
+/* RESPONSIVE - TABLETS */
+
+@media (max-width: 900px) {
+
+    .contenido {
+        padding: 35px 22px;
+    }
+
+    .zona {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .editor,
+    .vista {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer {
+        padding: 35px 25px 20px;
+    }
+
+    .footer-contenido {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        width: 65px;
+        padding: 18px 8px;
+    }
+
+    .menu:hover {
+        width: 65px;
+    }
+
+    .menu span {
+        opacity: 0;
+    }
+
+    .menu a {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contenido {
+        margin-left: 65px;
+        padding: 28px 12px;
+        gap: 22px;
+    }
+
+    .encabezado h1 {
+        font-size: 26px;
+    }
+
+    .frase {
+        padding: 20px 15px;
+    }
+
+    .zona {
+        width: 100%;
+    }
+
+    .editor,
+    .vista {
+        width: 100%;
+        padding: 16px 12px;
+    }
+
+    .titulo {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .titulo h2 {
+        font-size: 20px;
+    }
+
+    .usuario {
+        min-width: 0;
+    }
+
+    .usuario > div:last-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botones button {
+        flex: 1 1 110px;
+    }
+
+    .post {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .post h3,
+    #ver-mensaje {
+        overflow-wrap: anywhere;
+    }
+
+    #ver-imagen {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        margin-left: 65px;
+        padding: 30px 18px 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-abajo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

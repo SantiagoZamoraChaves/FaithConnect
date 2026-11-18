@@ -416,3 +416,153 @@ button {
     background-color: #555555;
     border-radius: 10px;
 }
+
+
+/* RESPONSIVE - TABLETS */
+
+@media (max-width: 900px) {
+
+    .principal {
+        padding: 0 20px 40px;
+    }
+
+    .reproductor {
+        margin-top: 40px;
+    }
+
+    .zona-inferior {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .informacion-video,
+    .temas {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .temas {
+        flex: 0 1 auto;
+    }
+
+    .lista-temas {
+        max-height: 300px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        width: 65px;
+        padding: 18px 8px;
+    }
+
+    .menu:hover {
+        width: 65px;
+    }
+
+    .menu span {
+        opacity: 0;
+    }
+
+    .menu a {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contenido {
+        margin-left: 65px;
+        width: calc(100% - 65px);
+        min-width: 0;
+    }
+
+    .principal {
+        width: 100%;
+        padding: 0 12px 35px;
+        gap: 18px;
+    }
+
+    .reproductor {
+        margin-top: 25px;
+    }
+
+    .reproductor video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .informacion-video h1 {
+        font-size: 24px;
+    }
+
+    .fila-canal {
+        flex-wrap: wrap;
+    }
+
+    .canal {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .seguir {
+        padding: 9px 15px;
+        margin-left: 0;
+    }
+
+    .descripcion {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .escritura h3 {
+        font-size: 17px;
+    }
+
+    .versiculo {
+        padding: 16px 12px;
+    }
+
+    .versiculo p {
+        font-size: 13px;
+    }
+
+    .temas {
+        padding: 14px 10px;
+        gap: 14px;
+    }
+
+    .tema {
+        gap: 10px;
+    }
+
+    .tema img,
+    .miniatura-alternativa {
+        width: 85px;
+        min-width: 85px;
+        height: 50px;
+    }
+
+    .tema p {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .lista-temas {
+        max-height: 280px;
+    }
+}

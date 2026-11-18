@@ -520,3 +520,206 @@ a {
     color: #526b59;
     font-size: 12px;
 }
+
+
+/* RESPONSIVE - TABLETS */
+
+@media (max-width: 900px) {
+
+    .contenido {
+        padding: 35px 22px 60px;
+    }
+
+    .portada {
+        padding: 28px;
+        min-height: 180px;
+    }
+
+    .portada img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .fila-videos {
+        gap: 14px;
+    }
+
+    .video-tarjeta {
+        flex: 0 0 calc((100% - 28px) / 3);
+        min-width: 0;
+    }
+
+    .zona-video {
+        flex-direction: column;
+    }
+
+    .otros-videos {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 35px 25px 20px;
+    }
+
+    .footer-contenido {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        width: 65px;
+        padding: 18px 8px;
+    }
+
+    .menu:hover {
+        width: 65px;
+    }
+
+    .menu span {
+        opacity: 0;
+    }
+
+    .menu a {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contenido {
+        margin-left: 65px;
+        padding: 25px 12px 45px;
+    }
+
+    .pagina {
+        width: 100%;
+    }
+
+    .portada {
+        padding: 20px 14px;
+        min-height: 145px;
+        gap: 12px;
+        border-radius: 12px;
+    }
+
+    .portada-etiqueta {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .portada h1 {
+        font-size: 24px;
+        overflow-wrap: anywhere;
+    }
+
+    .portada img {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+    }
+
+    .invitacion {
+        margin: 32px 0 38px;
+    }
+
+    .invitacion h2 {
+        font-size: 21px;
+        line-height: 1.35;
+    }
+
+    .invitacion > p:last-child {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .seccion-videos {
+        margin-bottom: 35px;
+    }
+
+    .seccion-videos h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .fila-videos {
+        gap: 12px;
+        padding-bottom: 12px;
+    }
+
+    .video-tarjeta {
+        flex: 0 0 85%;
+        min-width: 0;
+    }
+
+    .miniatura {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .miniatura img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .fila-con-degradado::after {
+        width: 10%;
+        bottom: 12px;
+    }
+
+    .mensaje-final {
+        margin: 45px auto 10px;
+        padding: 15px 0;
+    }
+
+    .mensaje-final h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .mensaje-final > p:not(.subtitulo) {
+        font-size: 13px;
+    }
+
+    .mensaje-final span {
+        font-size: 12px;
+    }
+
+    .reproductor-contenedor {
+        width: 100%;
+    }
+
+    .detalle-video h1 {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-left: 65px;
+        padding: 30px 18px 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-abajo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

@@ -538,6 +538,16 @@ main h1 {
     font-weight: bold;
 }
 
+.etiqueta-publicacion1y3 {
+    align-self: flex-start;
+    padding: 15px 18px;
+    background-color: #DFE8D9;
+    color: #355C44;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .texto {
     font-size: 15px;
     line-height: 1.6;
@@ -687,4 +697,166 @@ main h1 {
     margin: 0;
     font-size: 12px;
     color: #526b59;
+}
+
+
+/* RESPONSIVE - TABLETS */
+
+@media (max-width: 900px) {
+
+    .contenido {
+        padding: 25px 18px;
+    }
+
+    .fila-post {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 455px;
+        flex-shrink: 1;
+    }
+
+    .post {
+        max-width: 455px;
+    }
+
+    .video,
+    .imagen-post {
+        height: auto;
+        max-height: 650px;
+    }
+
+    .footer {
+        padding: 35px 25px 20px;
+    }
+
+    .footer-contenido {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        width: 65px;
+        padding: 18px 8px;
+    }
+
+    .menu:hover {
+        width: 65px;
+    }
+
+    .menu span {
+        opacity: 0;
+    }
+
+    .menu a {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contenido {
+        margin-left: 65px;
+        padding: 20px 12px;
+        gap: 22px;
+    }
+
+    .historias {
+        max-width: 100%;
+    }
+
+    .historias ul {
+        gap: 12px;
+    }
+
+    main h1 {
+        font-size: 25px;
+    }
+
+    .versiculo {
+        padding: 20px 15px;
+    }
+
+    .versiculo h2 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .comunidad {
+        width: 100%;
+        padding: 18px 12px;
+    }
+
+    .campos {
+        flex-direction: column;
+    }
+
+    .categoria,
+    .mensaje {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .publicar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .publicaciones,
+    .fila-post {
+        width: 100%;
+    }
+
+    .post {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .video,
+    .imagen-post {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+    .usuario h4 {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer {
+        margin-left: 65px;
+        padding: 30px 18px 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-abajo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
